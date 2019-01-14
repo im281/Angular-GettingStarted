@@ -9,8 +9,12 @@ import { IProduct } from './product';
   providedIn: 'root'
 })
 export class ProductService {
-  private productUrl = 'api/products/products.json';
-
+  //private productUrl = 'api/products/products.json';
+  
+  //Web server running on my raspberry pi with Flask
+  //make sure CORS is enabled on the server
+  private productUrl = 'http://192.168.1.70/api/products';
+  
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<IProduct[]> {
