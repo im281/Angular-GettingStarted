@@ -1,0 +1,11 @@
+//Create Angluar Component
+ng g c folder/componentName
+
+//Create Angluar Component in folder already created
+ng g c folder/componentName --flat
+
+//Create Angular Module and import into exampleModule
+ng g m folder/moduleName -m folder/exampleModule
+
+//Create Angular Module  in folder already created
+ng g m folder/moduleName --flat -m folder/exampleModule
